@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<title>Flat Earth Sun & Moon Simulation</title>
+		
+		<link rel="stylesheet" type="text/css" href="assets/style.css" />
+
+		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+		<link rel="manifest" href="favicon/site.webmanifest" />
+
+	</head>
+
+	<body>
+
+		<input type="datetime-local" id="datetimeInput">
+
+		<div id="earth">
+			<div id="sun">
+				<svg width="1200" height="1200" xmlns="http://www.w3.org/2000/svg">
+					<defs>
+						<radialGradient id="shadowGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+							<stop offset="0%" style="stop-color: rgba(0, 0, 0, 0); stop-opacity: 0" />
+							<stop offset="20%" style="stop-color: rgba(0, 0, 0, 0.5); stop-opacity: 0.5" />
+							<stop offset="40%" style="stop-color: rgba(0, 0, 0, 0.9); stop-opacity: 0.9" />
+							<stop offset="100%" style="stop-color: rgba(0, 0, 0, 1); stop-opacity: 1" />
+						</radialGradient>
+					</defs>
+					<circle cx="600" cy="600" r="600" fill="url(#shadowGradient)" />
+				</svg>
+			</div>
+			<div id="moon"></div>
+		</div>
+
+		<span>FlatEarth Sun&Moon; by (&copy)Mysterio. <a href="https://eridrekaj.com">website</a> | <a href="https://eridrekaj.com">github</a></span>
+
+		<script src="assets/script.js"></script>
+
+	</body>
+
+</html>
